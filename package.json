@@ -7,6 +7,33 @@
   "es2015": "./dist/esm/index.js",
   "types": "./dist/types/index.d.ts",
   "sideEffects": false,
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    },
+    "./ajax": {
+      "require": "./dist/cjs/ajax/index.js",
+      "import": "./dist/esm/ajax/index.js"
+    },
+    "./fetch": {
+      "require": "./dist/cjs/fetch/index.js",
+      "import": "./dist/esm/fetch/index.js"
+    },
+    "./operators": {
+      "require": "./dist/cjs/operators/index.js",
+      "import": "./dist/esm/operators/index.js"
+    },
+    "./testing": {
+      "require": "./dist/cjs/testing/index.js",
+      "import": "./dist/esm/testing/index.js"
+    },
+    "./webSocket": {
+      "require": "./dist/cjs/webSocket/index.js",
+      "import": "./dist/esm/webSocket/index.js"
+    }
+  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
@@ -147,7 +174,7 @@
     "source-map-support": "0.5.3",
     "systemjs": "^0.21.0",
     "ts-api-guardian": "^0.5.0",
-    "ts-node": "^9.0.0",
+    "ts-node": "^9.1.1",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-etc": "1.9.2",
