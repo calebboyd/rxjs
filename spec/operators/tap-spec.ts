@@ -39,7 +39,7 @@ describe('tap operator', () => {
     expect(err).to.equal('bad');
   });
 
-  it('should handle everything with an observer', (done: MochaDone) => {
+  it('should handle everything with an observer', (done: Mocha.Done) => {
     const expected = [1, 2, 3];
     const results: number[] = [];
 
@@ -58,7 +58,7 @@ describe('tap operator', () => {
       })).subscribe();
   });
 
-  it('should handle everything with a Subject', (done: MochaDone) => {
+  it('should handle everything with a Subject', (done: Mocha.Done) => {
     const expected = [1, 2, 3];
     const results: number[] = [];
     const subject = new Subject<number>();
