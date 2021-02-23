@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { tap, mergeMap, take } from 'rxjs/operators';
 import { Subject, of, throwError, Observer, EMPTY, Observable } from 'rxjs';
-import { hot, cold, expectObservable, expectSubscriptions } from '../helpers/marble-testing';
+import { hot, cold, expectObservable, expectSubscriptions } from '../helpers/marble-testing.js';
 
 /** @test {tap} */
 describe('tap operator', () => {
