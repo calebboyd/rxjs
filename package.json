@@ -9,30 +9,48 @@
   "sideEffects": false,
   "type": "module",
   "exports": {
-    ".": {
-      "require": "./dist/cjs/index.js",
-      "import": "./dist/esm/index.js"
-    },
-    "./ajax": {
-      "require": "./dist/cjs/ajax/index.js",
-      "import": "./dist/esm/ajax/index.js"
-    },
-    "./fetch": {
-      "require": "./dist/cjs/fetch/index.js",
-      "import": "./dist/esm/fetch/index.js"
-    },
-    "./operators": {
-      "require": "./dist/cjs/operators/index.js",
-      "import": "./dist/esm/operators/index.js"
-    },
-    "./testing": {
-      "require": "./dist/cjs/testing/index.js",
-      "import": "./dist/esm/testing/index.js"
-    },
-    "./webSocket": {
-      "require": "./dist/cjs/webSocket/index.js",
-      "import": "./dist/esm/webSocket/index.js"
-    }
+    ".": [
+      {
+        "import": "./dist/esm/index.js",
+        "default": "./dist/cjs/index.js"
+      },
+      "./dist/cjs/index.js"
+    ],
+    "./ajax": [
+      {
+        "import": "./dist/esm/ajax/index.js",
+        "default": "./dist/cjs/ajax/index.js"
+      },
+      "./dist/cjs/ajax/index.js"
+    ],
+    "./fetch": [
+      {
+        "import": "./dist/esm/fetch/index.js",
+        "default": "./dist/cjs/fetch/index.js"
+      },
+      "./dist/cjs/fetch/index.js"
+    ],
+    "./operators": [
+      {
+        "import": "./dist/esm/operators/index.js",
+        "default": "./dist/cjs/operators/index.js"
+      },
+      "./dist/cjs/operators/index.js"
+    ],
+    "./testing": [
+      {
+        "import": "./dist/esm/testing/index.js",
+        "default": "./dist/cjs/testing/index.js"
+      },
+      "./dist/cjs/testing/index.js"
+    ],
+    "./webSocket": [
+      {
+        "import": "./dist/esm/webSocket/index.js",
+        "default": "./dist/cjs/webSocket/index.js"
+      },
+      "./dist/cjs/webSocket/index.js"
+    ]
   },
   "config": {
     "commitizen": {
