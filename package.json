@@ -11,42 +11,54 @@
   "exports": {
     ".": [
       {
+        "module": "./dist/esm5/index.js",
         "import": "./dist/esm/index.js",
+        "types": "./dist/types/index.d.ts",
         "default": "./dist/cjs/index.js"
       },
       "./dist/cjs/index.js"
     ],
     "./ajax": [
       {
+        "module": "./dist/esm5/ajax/index.js",
         "import": "./dist/esm/ajax/index.js",
+        "types": "./dist/types/ajax/index.d.ts",
         "default": "./dist/cjs/ajax/index.js"
       },
       "./dist/cjs/ajax/index.js"
     ],
     "./fetch": [
       {
+        "module": "./dist/esm5/fetch/index.js",
         "import": "./dist/esm/fetch/index.js",
+        "types": "./dist/types/fetch/index.d.ts",
         "default": "./dist/cjs/fetch/index.js"
       },
       "./dist/cjs/fetch/index.js"
     ],
     "./operators": [
       {
+        "module": "./dist/esm5/operators/index.js",
         "import": "./dist/esm/operators/index.js",
+        "types": "./dist/types/operators/index.d.ts",
         "default": "./dist/cjs/operators/index.js"
       },
       "./dist/cjs/operators/index.js"
     ],
     "./testing": [
       {
+        "module": "./dist/esm5/testing/index.js",
         "import": "./dist/esm/testing/index.js",
+        "types": "./dist/types/testing/index.d.ts",
         "default": "./dist/cjs/testing/index.js"
       },
       "./dist/cjs/testing/index.js"
     ],
     "./webSocket": [
       {
+        "module": "./dist/esm5/webSocket/index.js",
         "import": "./dist/esm/webSocket/index.js",
+        "types": "./dist/types/webSocket/index.d.ts",
         "default": "./dist/cjs/webSocket/index.js"
       },
       "./dist/cjs/webSocket/index.js"
